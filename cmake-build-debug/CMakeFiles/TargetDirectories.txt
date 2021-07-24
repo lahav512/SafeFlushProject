@@ -1,3 +1,0 @@
-C:/Users/Lahav/CLionProjects/SafeFlushProject/cmake-build-debug/CMakeFiles/SafeFlushProject.dir
-C:/Users/Lahav/CLionProjects/SafeFlushProject/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Lahav/CLionProjects/SafeFlushProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
