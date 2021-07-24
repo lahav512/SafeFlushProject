@@ -4,11 +4,12 @@
 #include "../Headers/tools.h"
 #include "../Headers/flush.h"
 
-//extern char * FILEPATH;
+void __attribute__((constructor)) setup();
 
 void read(long address, long len, char ** buff) {
     FILE * file_p;
 
+    // Open the file
     file_p = fopen(FILEPATH, "r+");
     if (!file_p) {
         fprintf(stderr, "Could not read the file.");
@@ -16,10 +17,15 @@ void read(long address, long len, char ** buff) {
         return;
     }
 
+    // Go to the relevant file address
     fseek(file_p, (long) address, SEEK_SET);
+
+    // Get the relevant data into 'buff'
     *buff = (char *) malloc((len+1) * sizeof(char));
     fgets(*buff, (long) len + 1, file_p);
     (*buff)[len] = '\0';
+
+    // Close the file
     fclose(file_p);
 }
 void write(long address, long len, char * buff) {
@@ -42,16 +48,18 @@ void createStorage() {
     fprintf(file_p, "%0*d", MEMORY_BITS, 0);
     fclose(file_p);
 }
+
 void setup() {
     char * file_path = getRootDir();
     strcat(file_path, RELATIVE_FILEPATH);
     FILEPATH = file_path;
+
+    MEMORY_BITS = BLOCK_BITS * BLOCK_COUNT;
 }
 
 const FlushAPI flushAPI = {
         read,
         write,
         erase,
-        setup,
         createStorage
 };

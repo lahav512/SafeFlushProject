@@ -13,7 +13,6 @@ CMakeFiles/SafeFlushProject.dir/SafeFlushAPI/Sources/safe_flush.c.obj: ../SafeFl
 CMakeFiles/SafeFlushProject.dir/SafeFlushAPI/Sources/safe_flush.c.obj: ../SafeFlushAPI/Sources/safe_flush.c
 
 CMakeFiles/SafeFlushProject.dir/main.c.obj: ../FlushAPI/Headers/flush.h
-CMakeFiles/SafeFlushProject.dir/main.c.obj: ../FlushAPI/Headers/tools.h
 CMakeFiles/SafeFlushProject.dir/main.c.obj: ../SafeFlushAPI/Headers/safe_flush.h
 CMakeFiles/SafeFlushProject.dir/main.c.obj: ../main.c
 
