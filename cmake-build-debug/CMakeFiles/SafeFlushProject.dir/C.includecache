@@ -8,17 +8,15 @@
 
 C:/Users/Lahav/CLionProjects/SafeFlushProject/FlushAPI/Headers/flush.h
 
-C:/Users/Lahav/CLionProjects/SafeFlushProject/FlushAPI/Headers/tools.h
+C:/Users/Lahav/CLionProjects/SafeFlushProject/SafeFlushAPI/Headers/safe_flush.h
+../../FlushAPI/Headers/flush.h
+C:/Users/Lahav/CLionProjects/SafeFlushProject/FlushAPI/Headers/flush.h
 
-C:/Users/Lahav/CLionProjects/SafeFlushProject/FlushAPI/Sources/flush.c
+C:/Users/Lahav/CLionProjects/SafeFlushProject/main.c
 stdio.h
--
-stdlib.h
 -
 string.h
 -
-../Headers/tools.h
-C:/Users/Lahav/CLionProjects/SafeFlushProject/FlushAPI/Headers/tools.h
-../Headers/flush.h
-C:/Users/Lahav/CLionProjects/SafeFlushProject/FlushAPI/Headers/flush.h
+SafeFlushAPI/Headers/safe_flush.h
+C:/Users/Lahav/CLionProjects/SafeFlushProject/SafeFlushAPI/Headers/safe_flush.h
 
