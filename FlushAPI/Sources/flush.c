@@ -4,7 +4,7 @@
 #include "../Headers/tools.h"
 #include "../Headers/flush.h"
 
-//extern char * FILEPATH;
+void __attribute__((constructor)) setup();
 
 void read(long address, long len, char ** buff) {
     FILE * file_p;
@@ -46,12 +46,13 @@ void setup() {
     char * file_path = getRootDir();
     strcat(file_path, RELATIVE_FILEPATH);
     FILEPATH = file_path;
+
+    MEMORY_BITS = BLOCK_BITS * BLOCK_COUNT;
 }
 
 const FlushAPI flushAPI = {
         read,
         write,
         erase,
-        setup,
         createStorage
 };
