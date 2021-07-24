@@ -4,7 +4,15 @@
 #include "../../FlushAPI/Headers/flush.h"
 
 typedef struct {
+    /**
+     * <br>
+     * Safely write a string of characters into the storage.
+     */
     void (*safeWrite)(long address, long len, char * buff);
+    /**
+     * <br>
+     * Erase all blocks.
+     */
     void (*eraseAll)();
 } SafeFlushAPI;
 

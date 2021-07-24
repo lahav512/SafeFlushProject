@@ -4,7 +4,7 @@
 
 int main() {
     // Create an an empty (zeros) storage.
-//    flushAPI.createStorage();
+    flushAPI.createStorage();
 
     char * data;
     char * chunk = "0101110101010111111111111111010100000111000110101100010101";
